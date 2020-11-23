@@ -2,7 +2,7 @@ version: '3.7'
 services:
   service1:
     image: application1:latest
-    build: ./application11 
+    build: ./application1 
     ports:
     - target: 5000
       published: 5000
