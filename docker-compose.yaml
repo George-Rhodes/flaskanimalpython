@@ -1,13 +1,13 @@
 version: '3.7'
 services:
-  service1:
+  app1:
     image: application1:latest
     build: ./application1 
     ports:
     - target: 5000
       published: 5000
       protocol: tcp
-  service2:
+  app2:
     image: application2:latest      
     build: ./application2
     ports:

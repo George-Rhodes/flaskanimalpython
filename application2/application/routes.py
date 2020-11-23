@@ -1,4 +1,4 @@
-  from flask import redirect, url_for, Response, request
+from flask import redirect, url_for, Response, request
 from application import app
 import requests
 import random
