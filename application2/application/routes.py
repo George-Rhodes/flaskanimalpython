@@ -1,6 +1,5 @@
-from flask import redirect, url_for, Response, request
 from application import app
-import requests
+from flask import Response, request
 import random
 
 @app.route('/')
