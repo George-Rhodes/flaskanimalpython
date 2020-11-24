@@ -2,14 +2,13 @@ from application import app
 from flask import Response, request
 import random
 
-@app.route('/')
-@app.route('/animal/name', methods=['GET','POST'])
+@app.route('/animal/name', methods=['GET'])
 def animal_name():
     animal_list=["dog","turkey","pig","cat","snake", "lion", "chicken", "robot"]
     the_data = random.choice(animal_list)
     return Response(the_data, mimetype='text/plain')
 
-@app.route('/animal/noise', methods=['GET','POST'])
+@app.route('/animal/noise', methods=['POST'])
 def animal_noise():
     response=request.data.decode('utf-8')
     if response == "dog":
