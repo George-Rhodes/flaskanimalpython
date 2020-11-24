@@ -6,7 +6,7 @@ import requests
 
 @app.route('/home', methods=['GET'])
 def home():
-    return render_template('home.html', title='Home')
+    return render_template('index.html', title='Home')
 
 
 @app.route('/get/animal', methods=['GET','POST'])
