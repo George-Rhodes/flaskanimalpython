@@ -8,12 +8,12 @@ pipeline{
             }
             stage('Build'){
                 steps{
-                    sh "./scripts/build.sh"
+                    sh ". ./scripts/build.sh"
                 }
             }
             stage('Deploy App'){
                 steps{
-                    sh "./scripts/deploy.sh"
+                    sh ". ./scripts/deploy.sh"
                 }
             }
         }
