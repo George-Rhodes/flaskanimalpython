@@ -1,7 +1,7 @@
 version: '3.7'
 services:
   application1:
-    image: application1:latest
+    image: georgerhodes/application1:latest
     build: ./application1 
     ports:
     - target: 5000
@@ -10,7 +10,7 @@ services:
     deploy:
       replicas: 3
   application2:
-    image: application2:latest      
+    image: georgerhodes/application2:latest      
     build: ./application2
     ports:
     - target: 5001
